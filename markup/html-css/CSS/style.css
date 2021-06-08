@@ -1,10 +1,10 @@
-/*全体のスタイル（CSSリセット用）*/
+/*全体のスタイル（CSSリセット用） */
 *{
-    /* padding,borderが要素の中に入る */
-    box-sizing:border-box;
+     /* padding,borderが要素の中に入る */
+     box-sizing:border-box;
 }
 ul{
-    /* リストの・を消す */
+    /* リストの・を消す */ 
     list-style: none;
     margin:0;
 }
@@ -16,13 +16,203 @@ h1,h2,h3,h4,h5,h6,p,span,button{
 }
 
 a{
-    color:inherit; 
+    color:inherit;
     /* 文字の下の線を消す */
-    text-decoration:none;   
+    text-decoration:none;
 }
 
 body{
     color:#555;
     margin:0;
     line-height:1.6;
+}
+
+/* 共通のスタイル */
+.inner{
+    width:1100px;
+    padding:90px 0;
+    margin:0 auto;
+}
+
+.title-b{
+   font-weight:bold;
+}
+
+
+
+
+/* header  */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:0 20px;
+    color:#fff;
+    background-color:inherit;
+    position:absolute;
+    z-index:10;
+}
+
+.head-logo{
+   padding:20px 0;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.header-nav ul{
+    display:flex;
+    padding:22px 0;
+}
+
+.header-nav ul li{
+    margin-left:55px;
+    font-size:15px;
+}
+
+/* footer  */
+
+footer{
+    background-color:#191919;
+    height:50px;
+}
+.conpany-info{
+    text-align:center;
+    line-height:50px;
+    font-weight: bold;
+    font-size: 12px;
+    color:#fff;
+}
+
+/* first-v */
+#first-v{
+    height:770px;
+    background-image:URL("../img/bg1.png");
+    background-size:cover;
+    color:#fff;
+    position:relative;
+   
+
+}
+
+.first-v-wrap{
+    padding:285px 0 255px; 
+    margin:0 auto;
+    width:250px;
+    text-align:center;
+   
+    }
+.first-v-title{
+    margin-bottom:150px;
+    font-weight:bolt;
+    font-size:27px;
+}
+
+.first-v-title::after{
+    display:block;
+    content: "";
+    width:100px;
+    border-top:1px solid #fff;
+    margin:20px auto 0;
+}
+
+.first-v-btn{
+    width:200px;
+    height:50px;
+    text-align: center;
+    font-weight:bold;
+    border:none;
+    border-radius:5px;
+    background:Linear-gradient(-90deg,#283C86,#06BEB6);
+    box-shadow:0 5px #070707;
+    font-weight:bold;
+    font-size:15px;
+    color:#fff;
+}
+
+.fa-door-open{
+    margin-right:4px;
+}
+/* about */
+#about{
+    background-color:#F8F8F8;
+    
+}
+
+.about-title{
+    display:flex;
+    width:250px;
+    align-items:center;
+    font-size: 18px;
+    font-style: italic;
+    margin:0 auto;
+
+}
+
+.about-title::before{
+    content:"";
+    width:30px;
+    margin-right:20px;
+  
+    border-top:1px solid #191919;
+
+}
+
+
+.about-title::after{
+    content:"";
+    width:30px;
+    margin-left:20px;
+    border-top:1px solid #191919;
+}
+
+.about-item{
+    background-color:#fff;
+    width:300px;
+    height:312px;
+    padding:35px 50px 50px;
+    text-align: center;
+}
+
+.about-item_title{
+    
+}
+
+.about-item_img{
+    padding:20px 25px;
+
+}
+
+.about-item_img img{
+    width:100%;
+
+}
+
+.about-item_imgdesc{
+
+}
+
+/* entry */
+#entry{
+    height:100vh;
+}
+.entry-wrap{
+    padding:175px 0;
+    width:400px;
+    margin:0 auto;
+    text-align: center;
+}
+.entry-title{
+    margin-bottom:55px;
+    font-weight:bold;
+    font-size:18px;
+    color:#191919;
+}
+
+.entry-btn{
+   /* width:320px; */
+}
+
+.fa-door-open{
+    
 }
